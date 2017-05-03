@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>
+        Nerds-catalog
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="inner-catalog-page">
+<header class="main-header">
+    <div class="container">
+        <div class="main-header-top clearfix">
+            <div class="header-logo">
+                <a href="index.html"><img src="img/logo.png" width="139" height="56"></a>
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Студия</a>
+                    </li>
+                    <li>
+                        <a href="#">Клиенты</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li>
+                        <a class="basket" href="#">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-header-bottom">
+            <h1 class="welcome">Добро пожаловать в магазин готовых макетов</h1>
+        </div>
+    </div>
+</header>
+<main class="container">
+    <div class="project clearfix">
+        <div class="project-filter">
+            <form class="project-filter-form" action="#">
+                <fieldset class="project-filter-price">
+                    <legend class="project-filter-title">Стоимость:</legend>
+                    <div class="price-range-wrapper">
+                        <div class="price-range">
+                            <div class="price-range-scale"></div>
+                            <!--<div class="price-range-helper"></div>-->
+                            <div class="thumb-min">
+                                <div class="thumb-min-element"></div>
+                            </div>
+                            <div class="thumb-max">
+                                <div class="thumb-max-element"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-range-edit">
+                        <span>От</span>
+                        <input class="input-range" type="text" name="price-start" value="0">
+                        <span>До</span>
+                        <input class="input-range" type="text" name="price-end" value="1500">
+                    </div>
+                </fieldset>
+                <fieldset class="project-filter-layout">
+                    <legend class="project-filter-title">Сетка:</legend>
+                    <ul>
+                        <li>
+                            <input id="adaptive" name="layout" type="radio" value="adaptive">
+                            <label for="adaptive">
+                                Адаптивная
+                            </label>
+                        </li>
+                        <li>
+                            <input id="frozen" name="layout" type="radio" value="frozen">
+                            <label for="frozen">
+                                Фиксированная
+                            </label>
+                        </li>
+                        <li>
+                            <input id="reflowable" name="layout" type="radio" value="reflowable">
+                            <label for="reflowable">
+                                Резиновая
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="project-filter-feature">
+                    <legend class="project-filter-title">
+                        Особенности:
+                    </legend>
+                    <ul>
+                        <li>
+                            <input id="slider" type="checkbox">
+                            <label for="slider">
+                                Слайдер
+                            </label>
+                        </li>
+                        <li>
+                            <input id="advantage" type="checkbox">
+                            <label for="advantage">
+                                Блок преимуществ
+                            </label>
+                        </li>
+                        <li>
+                            <input id="news" type="checkbox">
+                            <label for="news">
+                                Новости
+                            </label>
+                        </li>
+                        <li>
+                            <input id="gallery" type="checkbox">
+                            <label for="gallery">
+                                Галерея
+                            </label>
+                        </li>
+                        <li>
+                            <input id="basket" type="checkbox">
+                            <label for="basket">
+                                Корзина
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="button" class="btn btn-show">
+                    Показать
+                </button>
+            </form>
+        </div>
+        <div class="project-catalog">
+            <div class="project-catalog-sort">
+                <span>Сортировать:</span>
+                <ul>
+                    <li>
+                        <a href="#">По цене</a>
+                    </li>
+                    <li>
+                        <a href="#">По типу</a>
+                    </li>
+                    <li>
+                        <a href="#">По функционалу</a>
+                    </li>
+                </ul>
+                <div class="project-catalog-sort-indicator-up"></div>
+                <div class="project-catalog-sort-indicator-down"></div>
+                <span></span>
+            </div>
+            <div class="project-catalog-cell">
+                <div class="visible-content">
+                    <div class="project-catalog-cell-browser">
+                        <span class="project-catalog-circle"></span>
+                        <span class="project-catalog-circle"></span>
+                        <span class="project-catalog-circle"></span>
+                    </div>
+                    <img src="img/aviator-project.jpg" width="240px" height="240px">
+                </div>
+                <div class="hidden-content">
+                    <b class="hidden-content-title">Aviator</b>
+                    <p class="hidden-content-description">Одностраничный макет с авторским дизайном</p>
+                    <a class="btn hidden-content-btn" href="#">8000 Р.</a>
+                </div>
+            </div>
+            <div class="project-catalog-cell">
+                <div class="visible-content">
+                    <div class="project-catalog-cell-browser">
+                        <div class="project-catalog-circle"></div>
+                        <div class="project-catalog-circle"></div>
+                        <div class="project-catalog-circle"></div>
+                    </div>
+                    <img src="img/sunset-project.jpg" width="240px" height="240px">
+                </div>
+                <div class="hidden-content">
+                    <b class="hidden-content-title">Sunset</b>
+                    <p class="hidden-content-description">Интернет магазин с личным кабинетом</p>
+                    <a class="btn hidden-content-btn" href="#">10000 Р.</a>
+                </div>
+            </div>
+            <div class="project-catalog-cell">
+                <div class="visible-content">
+                    <div class="project-catalog-cell-browser">
+                        <div class="project-catalog-circle"></div>
+                        <div class="project-catalog-circle"></div>
+                        <div class="project-catalog-circle"></div>
+                    </div>
+                    <img src="img/forte-project.jpg" width="240px" height="240px">
+                </div>
+                <div class="hidden-content">
+                    <b class="hidden-content-title">Forte</b>
+                    <p class="hidden-content-description">Отличный макет для личного блога</p>
+                    <a class="btn hidden-content-btn" href="#">5000 Р.</a>
+                </div>
+            </div>
+
+            <div class="project-catalog-cell">
+                <div class="visible-content">
+                    <div class="project-catalog-cell-browser">
+                        <div class="project-catalog-circle"></div>
+                        <div class="project-catalog-circle"></div>
+                        <div class="project-catalog-circle"></div>
+                    </div>
+                    <img src="img/margueu-project.jpg" width="240px" height="240px">
+                </div>
+                <div class="hidden-content">
+                    <b class="hidden-content-title">Modern organic thai</b>
+                    <p class="hidden-content-description">Сайт для ресторана быстрого питания</p>
+                    <a class="btn hidden-content-btn" href="#">12000 Р.</a>
+                </div>
+            </div>
+            <div class="project-catalog-cell">
+                <div class="visible-content">
+                    <div class="project-catalog-cell-browser">
+                        <div class="project-catalog-circle"></div>
+                        <div class="project-catalog-circle"></div>
+                        <div class="project-catalog-circle"></div>
+                    </div>
+                    <img src="img/avenue-project.jpg" width="240px" height="240px">
+                </div>
+                <div class="hidden-content">
+                    <b class="hidden-content-title">Avenue</b>
+                    <p class="hidden-content-description">макет для блога о путешествиях</p>
+                    <a class="btn hidden-content-btn" href="#">8000 Р.</a>
+                </div>
+            </div>
+            <div class="project-catalog-cell">
+                <div class="visible-content">
+                    <div class="project-catalog-cell-browser">
+                        <div class="project-catalog-circle"></div>
+                        <div class="project-catalog-circle"></div>
+                        <div class="project-catalog-circle"></div>
+                    </div>
+                    <img src="img/dovetail-project.jpg" width="240px" height="240px">
+                </div>
+                <div class="hidden-content">
+                    <b class="hidden-content-title">Dovetail</b>
+                    <p class="hidden-content-description">Интернет магазин с галереей товаров</p>
+                    <a class="btn hidden-content-btn" href="#">14000 Р.</a>
+                </div>
+            </div>
+            <div class="pagination">
+                <ul class="list-pagination">
+                    <li>
+                        <a class="active" href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">Следующая</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="main-footer">
+    <div class="map-box">
+        <img src="img/map.jpg" width="1199px" height="416px">
+        <div class="map-feature">
+            <span class="map-feature-title">Nerds design studio</span>
+            <p class="map-feature-address">191186, Санк-петербург,<br>ул. Б. Конюшенная,д.19/8</p>
+            <span class="map-feature-phone">тел.+7(812)275-75-75</span>
+            <a class="btn feedback" href="#">Напишите нам</a>
+        </div>
+    </div>
+    <div class="container clearfix">
+        <div class="main-footer-social">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
+        </div>
+        <div class="main-footer-attraction">
+            <h2 class="main-footer-title">Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для социальных друзей</p>
+        </div>
+    </div>
+</div>
+<div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <form class="write-us" name="message" action="#" method="get">
+        <div class="content-name">
+            <label for="user-name">Ваше имя:</label>
+            <input class="user-name" id="user-name" type="text" name="user" placeholder="* Представьтесь, пожалуйста">
+            <div class="message-error" for="user-name">This is required field</div>
+        </div>
+        <div class="content-email">
+            <label for="user-email">Ваши e-mail:</label>
+            <input class="user-email" type="email" id="user-email" name="email" placeholder="* Для отправки ответа">
+            <div class="message-error" for="user-email">This is required field</div>
+        </div>
+        <div class="content-text">
+            <label for="user-text">Текст письма:</label>
+            <textarea class="user-text" name="text" id="user-text" placeholder="* В свободной форме"></textarea>
+            <div class="message-error" for="user-text">This is required field</div>
+        </div>
+        <div class="form-btns">
+            <input class="btn message-submit" type="submit" value="Отправить">
+            <input class="btn message-cancel" type="button" value="Отмена">
+
+        </div>
+    </form>
+
+</div>
+<script src="js/showPopUp.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/priceRange.js"></script>
+</body>
+
+</html>
